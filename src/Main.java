@@ -19,8 +19,11 @@ public class Main {
         System.out.println(System.lineSeparator() + compareLists(list1, list2));
 
         //  Задача 3
-        IterableString iterableStrings = new IterableString("jack john jeff");
-        for (String str : iterableStrings) {
+        IterableString iterableString = new IterableString("jack john jeff");
+        System.out.println(System.lineSeparator() + iterableString);
+        System.out.println("-------------------------");
+        System.out.println("Печатаем текст по словам:");
+        for (String str : iterableString) {
             System.out.println(str);
         }
     }
