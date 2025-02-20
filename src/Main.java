@@ -26,13 +26,7 @@ public class Main {
         for (String str : iterableString) {
             System.out.println(str);
         }
-    }
-
-    public static void printReversed(List<String> names) {
-        ListIterator<String> iterator = names.listIterator(names.size());
-        while (iterator.hasPrevious()) {
-            System.out.println(iterator.previous());
-        }
+//        splitter(iterableString);
     }
 
     public static List<Boolean> compareLists(List<Integer> list1, List<Integer> list2) {
@@ -47,6 +41,19 @@ public class Main {
         return result;
     }
 
+    public static void printReversed(List<String> names) {
+        ListIterator<String> iterator = names.listIterator(names.size());
+        while (iterator.hasPrevious()) {
+            System.out.println(iterator.previous());
+        }
+    }
+
+    //    public static void splitter(IterableString iterableString){
+    //        String[] words = iterableString.toString().split(" ");
+    //        for (int i = 0; i < words.length; i++){
+    //            System.out.println(words[i]);
+    //        }
+    //    }
     public static void remove( List<String> namesList, String delete){
         Iterator<String> iterator = namesList.iterator();
         for (int i = 0; i < namesList.size(); i++){
